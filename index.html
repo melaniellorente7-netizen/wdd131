@@ -7,73 +7,85 @@
   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Melanie Llorente - home page">
   <meta name="author" content="Melanie Llorente">
   <title>WDD 131 – Dynamic Web Fundamentals – Melanie Llorente</title>
-  
+
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
   <header>
-    <span id="course-title"><h1>WDD 131 – Dynamic Web Fundamentals</h1>
+    <span id="course-title">
+      <h1>WDD 131 – Dynamic Web Fundamentals</h1>
 
     </span>
-    
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" title="Linkedin">Linkedin</a></li>
-                <li><a href="https://byupw.instructure.com/." title="Canvas">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" title="Scripture">Scripture</a></li>
-                <li><a href="#" title="Final Project">Final Project</a></li>
-        
-            </ul>
-        </nav>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="https://www.linkedin.com/in/melaniellorente" title="Linkedin">Linkedin</a></li>
+        <li><a href="https://byupw.instructure.com/." title="Canvas">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+            title="Scripture">Scripture</a></li>
+        <li><a href="#" title="Final Project">Final Project</a></li>
+
+      </ul>
+    </nav>
   </header>
   <main>
     <h1>Melanie Llorente</h1>
     <div class="cards-container">
-    <section class="card">
-      <h2>About Me</h2>
-      <div class = "card-body about-grid">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis ea ab hic voluptatibus deleniti fugit qui quasi inventore harum nobis distinctio, repellendus excepturi perferendis vel impedit aliquid quisquam vitae animi pariatur fugiat. Maiores reiciendis, expedita nam saepe dolorum qui dolores maxime sit veritatis non, ipsam, eius ad eum aliquam.</p>
-          <img src=""alt="" class="profile-img">
-        <div class ="location-section">
+      <section class="card">
+
+        <h2>About Me</h2>
+
+        <div class="card-about-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis ea ab hic voluptatibus deleniti
+            fugit qui quasi inventore harum nobis distinctio, repellendus excepturi perferendis vel impedit aliquid
+            quisquam vitae animi pariatur fugiat. Maiores reiciendis, expedita nam saepe dolorum qui dolores maxime sit
+            veritatis non, ipsam, eius ad eum aliquam.</p>
+
+          <img src="images/profile.jpg" alt="Melanie Profile Picture" class="profile-img">
+        </div>
+        <div class="uruguay-section">
           <h3>Montevideo, Uruguay</h3>
-          <hr>
-          <div class="location-content">
-            <figure>
-              <img src="" alt="" width="" height="">
-              <ficaption>Uruguay's Flag</ficaption>
-            </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eos atque veritatis ut ullam necessitatibus reprehenderit commodi ab magni dolore.</p>
-          </div>
-        </div>         
+        </div>
+        <hr>
+        <div class="uruguay-content">
+          <figure>
+            <img src="images/flag.jpg" alt="Uruguay's flag">
+            <ficaption>Uruguay's Flag</ficaption>
+          </figure>
+          <p>Born and raised in Uruguay! It is a small country in South America, we are just 3.5 million people in the
+            whole country.</p>
         </div>
 
-    </section>
-    <section class="card">
-      <h2>Web Dev Resources</h2>
-      <div class="card-body">
-        <ul class="web-resources-list">
-          <li><a href ="https://dev.to" target="_blank">Dev.to Commnunity</a></li>
-          <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-          <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-          <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
-          <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-          <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
-        </ul>
-      </div>
-    </section>
+
+
+      </section>
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <div class="card-body">
+          <ul class="web-resources-list">
+            <li><a href="https://dev.to" target="_blank">Dev.to Commnunity</a></li>
+            <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+            <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
   </main>
   <footer>
-    <p>
-      "C"
-    <span id="currentyear"> </span>
-    Melanie Llorente - Uruguay
-    </p>
+    <p>©<span id="currentyear"></span> Melanie Llorente - Uruguay</p>
     <p id="lastModified"></p>
   </footer>
 
-  
+
 
 </body>
 
