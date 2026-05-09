@@ -1,8 +1,9 @@
 :root {
 	--primary-blue: #1b4e7a;
-	--nav-bg: #333;
+	--background-color: #2f2e2e; 
 	--card-border: #ccc;
-	--text-color: #333;
+	--text-color1:#333;
+	--text-color2: #fff;
 }
 
 * {
@@ -11,19 +12,23 @@
 	box-sizing: border-box;
 }
 
+header {
+    background-color: var(--primary-blue);
+    color:var(--text-color2);
+	padding: 5px;
+}
+
 body {
 	font-family: "Fira Sans", sans-serif;
 	font-weight: 250;
 	font-style: normal;
-	background-color: #fff;
+	background-color: var(--text-color2);
 	color: var(--text-color);
 }
 
+
 #course-title {
 	display: block;
-}
-
-header h1 {
 	background-color: var(--primary-blue);
 	color: white;
 	text-align: center;
@@ -60,7 +65,7 @@ main h1 {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #333;
+	background-color: var(--background-color);
 	align-items: center;
 }
 
@@ -71,7 +76,7 @@ main h1 {
 .navigation a {
 	font-weight: 700;
 	display: block;
-	color: #eee;
+	color: var(--card-border);
 	padding: 0.75rem;
 	text-decoration: none;
 	text-align: center;
@@ -104,7 +109,7 @@ main h1 {
 	color: white;
 	text-align: center;
 	padding: 0.5rem;
-	font-size: 1.2 rem;
+	font-size: 1.2rem;
 }
 
 .card-body {
@@ -147,7 +152,7 @@ main h1 {
 
 .uruguay-content img {
 	width: 120px;
-	border: 1px solid #ddd
+	border: 1px solid #ddd;
 }
 
 .web-resources-list {
