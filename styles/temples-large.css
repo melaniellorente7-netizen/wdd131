@@ -1,0 +1,29 @@
+@media (min-width: 512px) {
+    
+    .temples-galery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    .navigation li {
+        width: auto;
+        border: none;
+    }
+
+
+}
