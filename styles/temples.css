@@ -2,10 +2,9 @@
   --background-primary: #FCFAF7;       
   --background-secondary: #F0EDE4;    
   --accent-primary: #4A5D4E;   
-  --accent-secondary: #8E735B; /* Café suave (Detalles decorativos) */
-  --text-main: #131614;        /* Gris verdoso casi negro (Lectura fluida) */
-  --text-muted: #575E59;       /* Gris medio para info secundaria */
-  --text-on-accent: #FFFFFF;   /* Blanco puro para texto sobre botones oscuros */
+  --accent-secondary: #8E735B; 
+  --text-main: #131614;              
+  --text-on-accent: #FFFFFF;   
   --border-color: #D1CEC4;
   --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
