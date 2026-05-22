@@ -1,0 +1,112 @@
+:root {
+  --background-primary: #FFFFFF;       
+  --background-secondary: #F0F4F8;    
+  --accent-primary: #002F93;   
+  --accent-secondary: #E6A100; 
+  --text-main: #0f2c5e;              
+  --text-on-accent: #FFFFFF;   
+  --border-color: D2DBE5;
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 250;
+	font-style: normal;
+	background-color: var(--background-secondary);
+	color: var(--text-main);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: var(--background-primary);
+    padding: 1rem 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    border: 2px solid #333;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    font-weight: 500;
+    text-align: center;
+    background-color:#D1CEC4;
+    padding: 2px;
+}
+
+.mobile-weather-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.weather-icon {
+    width: 90px;
+    height: auto;
+}
+
+.desktop-weather-icon {
+    display: none; 
+}
+
+.info-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.info-table td {
+    padding: 6px 12px;
+    font-size: 1.05rem;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+    color: var(--accent-primary);
+}
+
+.value {
+    text-align: left;
+    color: var(--accent-primary);
+}
+
+footer {
+	background-color: var(--background-primary);
+	color: var(--text-main);
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 2rem;
+}
+
+#lastModified {
+	color: var(--text-main);
+	font-size: 0.9rem;
+	margin-top: 5px;
+}

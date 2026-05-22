@@ -1,0 +1,74 @@
+@media (min-width: 700px) {
+    .mobile-image-container {
+        display: none;
+    }
+
+    main {
+        position: relative;
+        padding: 0;
+    }
+
+    .card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.88); 
+        padding: 0 0 20px 0;
+        border-radius: 2px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    .card-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .card-title h2 {
+        margin: 0;
+
+    }
+
+    .data-card {
+        top: 40px;
+        left: 40px;
+        width: 320px;
+    }
+
+
+    .weather-card {
+        bottom: 40px;
+        right: 40px;
+        width: 300px;
+    }
+
+    .desktop-weather-icon {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .mobile-weather-icon {
+        display: none; 
+    }
+
+    
+    .info-table {
+        width: 100%;
+    }
+
+    .info-table td {
+        padding: 5px 20px;
+        font-size: 0.95rem;
+    }
+
+    .label {
+        font-weight: bold;
+        color: #444444;
+    }
+
+    .value {
+        color: #000000;
+    }
+
+
+}
