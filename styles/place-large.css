@@ -39,17 +39,9 @@
     }
 
     .weather-card h2::after {
-    content: "";
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin-left: 8px;
-    background-image: url("../images/weather.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: middle;
-    }
+        content: " ⛅";
+}
+
 
     .desktop-weather-icon {
         font-size: 1rem;
