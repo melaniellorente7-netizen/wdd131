@@ -5,7 +5,7 @@
   --accent-secondary: #E6A100; 
   --text-main: #0f2c5e;              
   --text-on-accent: #FFFFFF;   
-  --border-color: D2DBE5;
+  --border-color: #D2DBE5;
   --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
@@ -21,6 +21,7 @@ body {
 	font-style: normal;
 	background-color: var(--background-secondary);
 	color: var(--text-main);
+
 }
 
 header {
@@ -38,14 +39,14 @@ main {
     flex-grow: 1;
 }
 
-img {
+.hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 .card {
-    border: 2px solid #333;
+    border: var(--border-color);
     background-color: #fff;
     padding: 20px;
     margin-bottom: 15px;
