@@ -101,15 +101,15 @@ main {
 }
 
 footer {
-	background-color: var(--background-primary);
-	color: var(--text-main);
+	background-color: var(--accent-primary);
+	color: white;
 	text-align: center;
 	padding: 1.5rem;
-	margin-top: 2rem;
+	
 }
 
 #lastModified {
-	color: var(--text-main);
+	color: white;
 	font-size: 0.9rem;
 	margin-top: 5px;
 }
