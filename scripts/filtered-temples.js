@@ -119,6 +119,8 @@ function createTempleCards(temples) {
 	src="${temple.imageUrl}"
 	alt="${temple.templeName}"
 	loading="lazy"
+	width="400" 
+    height="250"
 	/>`
 
 	container.appendChild(card);
