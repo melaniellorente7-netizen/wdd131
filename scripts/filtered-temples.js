@@ -77,7 +77,7 @@ const temples = [
 	location: "Montevideo, Uruguay",
 	dedicated: "2001, March, 18",
 	area: 10700,
-	imageUrl: "images/montevideo-uruguay-temple.jpg"
+	imageUrl: "images/montevideo-uruguay-temple.webp"
   },
 
     {
@@ -85,7 +85,7 @@ const temples = [
 	location: "Guadalajara, Mexico",
 	dedicated: "2001, April, 29",
 	area: 10700,
-	imageUrl: "images/guadalajara-mexico-temple.jpg"
+	imageUrl: "images/guadalajara-mexico-temple.webp"
   },
 
     {
@@ -93,7 +93,7 @@ const temples = [
 	location: "Bangkok, Thailand",
 	dedicated: "2023, October, 22",
 	area: 48525,
-	imageUrl: "images/bangkok-thailand-temple.jpg"
+	imageUrl: "images/bangkok-thailand-temple.webp"
   }
   
 ];
