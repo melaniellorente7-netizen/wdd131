@@ -77,7 +77,7 @@ const temples = [
 	location: "Montevideo, Uruguay",
 	dedicated: "2001, March, 18",
 	area: 10700,
-	imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/montevideo-uruguay-temple/montevideo-uruguay-temple-18474-main.jpg"
+	imageUrl: "images/montevideo-uruguay-temple.jpg"
   },
 
     {
@@ -85,7 +85,7 @@ const temples = [
 	location: "Guadalajara, Mexico",
 	dedicated: "2001, April, 29",
 	area: 10700,
-	imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/guadalajara-mexico-temple/guadalajara-mexico-temple-17313.jpg"
+	imageUrl: "images/guadalajara-mexico-temple.jpg"
   },
 
     {
@@ -93,7 +93,7 @@ const temples = [
 	location: "Bangkok, Thailand",
 	dedicated: "2023, October, 22",
 	area: 48525,
-	imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037.jpg"
+	imageUrl: "images/bangkok-thailand-temple.jpg"
   }
   
 ];
