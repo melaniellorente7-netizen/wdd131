@@ -1,0 +1,56 @@
+@media (min-width: 512px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .temples-galery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;             
+        align-items: center;       
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        margin: 0; 
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    .navigation li {
+        width: auto;
+        border: none;
+    }
+
+
+}
