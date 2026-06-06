@@ -185,3 +185,29 @@ select, input[type="date"], input[type="text"], textarea {
     text-decoration: underline;
     font-weight: bold;
 }
+
+@media screen and (min-width: 600px) {
+    
+   
+    .review-form {
+        max-width: 600px;
+        padding: 2.5rem; 
+    }
+
+    
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}
