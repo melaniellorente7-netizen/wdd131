@@ -1,0 +1,342 @@
+:root {
+    --primary-color: #2C2C2C; /* Textos */
+    --secondary-color: #F9F6F0; /* Fondos */
+    --accent-color: #D35400; /* Botones y enlaces */
+    --white: #FFFFFF;
+    --light-gray: #E0DCD5;
+    --success-color: #27AE60;
+    --font-heading: 'Playfair Display',Georgia, serif;
+    --font-body: 'Roboto', Arial, sans-serif;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+    padding: 20px 5%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+header {
+    background-color: var(--white);
+    border-bottom: 2px solid var(--light-gray);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+#navigation-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--light-gray);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#navigation-menu.open {
+    display: block;
+}
+
+#navigation-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation-menu a {
+    display: block;
+    padding: 15px 5%;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    border-top: 1px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+#navigation-menu a:hover, 
+#navigation-menu a.active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding-left: 7%; /* Efecto visual sutil */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--white);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.hero-section {
+    background-color: var(--primary-color); 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-overlay h1 {
+    font-size: 2rem;
+}
+
+.daily-recommendation-section, 
+.recipes-preview-section,
+.collection-header-section,
+.collection-grid-section {
+    margin-bottom: 40px;
+}
+
+
+.recipe-card-featured {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    min-height: 900px;
+}
+
+
+.recipe-card {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+    background-color: var((--light-gray));
+    display: block;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+.action-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form-page-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.styled-form {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: var(--accent-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: var(--white);
+}
+
+.form-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+
+.feedback-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.feedback-message.success {
+    background-color: #E8F8F5;
+    color: var(--success-color);
+    border: 1px solid var(--success-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.filter-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-container select {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid var(--light-gray);
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--accent-color);
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: #C0392B; 
+    border: 1px solid #C0392B;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.btn-delete:hover {
+    background-color: #C0392B;
+    color: var(--white);
+}

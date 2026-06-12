@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the final project for my WDD 131 class, it is about a digitial cookbok where I can see and store recipes">
+    <meta name="author" content="Melanie Llorente">
+    <title>My Digital CookBook | Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/recipes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="mycookbook.html" class="logo">My Digital Cookbook</a>
+            
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            </button>
+            
+            <nav id="navigation-menu">
+                <ul>
+                    <li><a href="mycookbook.html" class="active">Home</a></li>
+                    <li><a href="add-recipe.html">Add Recipe</a></li>
+                    <li><a href="all-recipes.html">My Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="her0-section">
+            <div class="hero-overlay">
+                <h1>Welcome to your Digital Cookbook!</h1>
+                <p>Never lose a delicious set of instructions never again</p>
+            </div>
+        </section>
+        <section class="daily-recommendation">
+            <h2>Recipe of the Day</h2>
+            <div id="recipe-of-the-day-card" class="recipe-card">
+                <div class="card-image-wrapper">
+                    <img src="" alt="Recipe of the day">
+                </div>
+                <div class="card-content">
+                    <h3 id="recipe-title">Loading today's special ...</h3>
+                    <p id ="recipe-desc">Our culinary engine...</p>
+                    <a href="all-recipes.html" class="btn btn-primary">View Full Recipe</a>
+                </div>
+            </div>
+        </section>
+        <section class="recipes-preview-section">
+            <h2>Recent Recipes</h2>
+            
+            <div id="recipes-preview-grid" class="recipes-grid">
+                <div class="recipe-card-fallback">
+                    <p>Your custom cookbook recipes will appear here shortly.</p>
+                </div>
+            </div>
+            
+            <div class="action-footer">
+                <a href="all-recipes.html" class="btn btn-secondary">View All Recipes</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Melanie Llorente - My Digital Cookbook</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
